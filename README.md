@@ -22,7 +22,7 @@ The Ansible playbook **playbook.yaml** is used with terraform provisioner local-
 <br><br/>
 I have used a user named as ritesh and corresponding to that user a private key. However For your project you can use a user and corresponding to that user a private key. This user has been created using the user_data.sh, you need to provide relevant user and it's public key in the user_data.sh.
 <br><br/>
-Using **ssh-keygen** it is possible to create the private key (~/.ssh/id_rsa) and public key (~/.ssh/id_rsa.pub).
+Using **ssh-keygen** it is possible to create the private key (/home/user/.ssh/id_rsa) and public key (/home/user/.ssh/id_rsa.pub). For root user it is /root/.ssh/id_rsa and /root/.ssh/id_rsa.pub for private and public key respectively.
 <br><br/>
 Below is the command which you can run to upgrade java from Java-7 to Java-8 using Ansible. 
 ![image](https://github.com/user-attachments/assets/cb60405c-35ee-4c31-a547-8a546da8abd9)

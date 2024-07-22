@@ -7,19 +7,9 @@
       name: java-1.8*
       state: present
     register: rhel
-    when: ansible_os_family == "RedHat"
   - name: check outcome for RHEL
     debug:
-      msg: "{{rhel}}"
-  - name: Install java-8 on Ubuntu Machine
-    apt:
-      name: openjdk-8-jdk
-      state: present
-    register: ubuntu
-    when: ansible_os_family == "Debian"
-  - name: check outcome for ubuntu
-    debug:
-      msg: "{{ubuntu}}"            
+      msg: "{{rhel}}"          
   - name: select desired java version
     alternatives:
       name: java

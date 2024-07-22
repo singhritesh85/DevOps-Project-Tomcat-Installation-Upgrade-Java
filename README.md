@@ -12,7 +12,7 @@ The Aim of this project is mentioned in below steps.
 Using terraform script present in this repository I have created two EC2 Instances and Application LoadBalancer.
 
 This terraform script will generate an inventory file named as hosts for Ansible.
-![image](https://github.com/user-attachments/assets/0acb634e-929f-4966-89ea-f281c3e2aa0f)
+![image](https://github.com/user-attachments/assets/b88bc4c4-74c6-476a-85b1-8af009372feb)
 
 At the time of Installation of tomcat I installed Java-7 but later I upgraded Java from Java-7 to Java-8 using Ansible.
 ```

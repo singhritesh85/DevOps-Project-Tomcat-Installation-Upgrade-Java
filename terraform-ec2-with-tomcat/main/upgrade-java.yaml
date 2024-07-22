@@ -2,14 +2,14 @@
   hosts: all
   become: yes
   tasks:
-  - name: Install java-8 on RHEL Machine
+  - name: Install java-8 on Amazon Linux2
     yum:
       name: java-1.8*
       state: present
-    register: rhel
+    register: amzn
   - name: check outcome for RHEL
     debug:
-      msg: "{{rhel}}"          
+      msg: "{{amzn}}"          
   - name: select desired java version
     alternatives:
       name: java
